@@ -113,7 +113,7 @@ export default function ROICalculator() {
           <div className="text-center mb-10">
             <div className="inline-block mb-4">
               <Image
-                src="/assets/images/calculator-logo.webp"
+                src="/assets/images/calculator-logo.ico"
                 alt="logo"
                 width={150}
                 height={150}
