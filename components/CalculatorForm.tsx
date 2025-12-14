@@ -26,6 +26,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Image from "next/image";
+import logoImage from '../public/assets/images/calculator-logo.ico'
 
 const InfoTooltip = ({ text }: { text: string }) => (
   <Tooltip>
@@ -113,7 +114,7 @@ export default function ROICalculator() {
           <div className="text-center mb-10">
             <div className="inline-block mb-4">
               <Image
-                src="/assets/images/calculator-logo.ico"
+                src={logoImage}
                 alt="logo"
                 width={150}
                 height={150}
