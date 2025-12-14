@@ -115,7 +115,7 @@ export default function ROICalculator() {
         >
           <div className="text-center mb-10">
             <div className="inline-block mb-4">
-              <Image src={"/calculator-logo.webp"} width={150} height={150} alt="Logo" unoptimized/>
+              <img src={"/calculator-logo.webp"} width={150} height={150} alt="Logo" />
             </div>
 
             <motion.h1
