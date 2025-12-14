@@ -27,6 +27,8 @@ import {
 } from "@/components/ui/tooltip";
 import Image from "next/image";
 
+
+
 const InfoTooltip = ({ text }: { text: string }) => (
   <Tooltip>
     <TooltipTrigger asChild>

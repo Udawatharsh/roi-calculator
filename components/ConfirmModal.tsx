@@ -24,7 +24,7 @@ import {
   Cell,
 } from "recharts";
 import emailjs from "@emailjs/browser";
-// @ts-expect-error
+// @ts-expect-error cause of this is unknown
 import domtoimage from "dom-to-image-more";
 import jsPDF from "jspdf";
 
@@ -406,7 +406,7 @@ export const ConfirmModal: React.FC<ConfirmModalProps> = ({
                             fill="#8884d8"
                             dataKey="value"
                             label={({ percent }) =>
-                              // @ts-expect-error
+                              // @ts-expect-error cause of this is unknown
                               `${(percent * 100).toFixed(0)}%`
                             }
                             labelLine={true}
