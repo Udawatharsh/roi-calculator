@@ -27,8 +27,6 @@ import {
 } from "@/components/ui/tooltip";
 import Image from "next/image";
 
-
-
 const InfoTooltip = ({ text }: { text: string }) => (
   <Tooltip>
     <TooltipTrigger asChild>
@@ -55,7 +53,6 @@ const formatNumberWithCommas = (value: string | number): string => {
 
   return Number(numericValue).toLocaleString("en-US");
 };
-
 
 export default function ROICalculator() {
   const [showModal, setShowModal] = useState(false);
@@ -115,7 +112,13 @@ export default function ROICalculator() {
         >
           <div className="text-center mb-10">
             <div className="inline-block mb-4">
-              <img src={"/assets/images/calculator-logo.webp"} width={150} height={150} alt="Logo" />
+              <Image
+                src="/assets/images/calculator-logo.webp"
+                alt="logo"
+                width={150}
+                height={150}
+                unoptimized
+              />
             </div>
 
             <motion.h1
@@ -386,7 +389,9 @@ export default function ROICalculator() {
                               max={50}
                               step={1}
                               value={field.value}
-                              onChange={(e) => field.onChange(Number(e.target.value))}
+                              onChange={(e) =>
+                                field.onChange(Number(e.target.value))
+                              }
                               className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-purple-600"
                             />
                             <span className="text-lg font-bold text-purple-600 min-w-[60px] text-right">
@@ -422,7 +427,9 @@ export default function ROICalculator() {
                               max={30}
                               step={1}
                               value={field.value}
-                              onChange={(e) => field.onChange(Number(e.target.value))}
+                              onChange={(e) =>
+                                field.onChange(Number(e.target.value))
+                              }
                               className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-green-600"
                             />
                             <span className="text-lg font-bold text-green-600 min-w-[60px] text-right">
@@ -623,7 +630,9 @@ export default function ROICalculator() {
                               max={80}
                               step={1}
                               value={field.value}
-                              onChange={(e) => field.onChange(Number(e.target.value))}
+                              onChange={(e) =>
+                                field.onChange(Number(e.target.value))
+                              }
                               className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-blue-600"
                             />
                             <span className="text-lg font-bold text-blue-600 min-w-[60px] text-right">
@@ -676,7 +685,9 @@ export default function ROICalculator() {
                               max={30}
                               step={1}
                               value={field.value}
-                              onChange={(e) => field.onChange(Number(e.target.value))}
+                              onChange={(e) =>
+                                field.onChange(Number(e.target.value))
+                              }
                               className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-orange-600"
                             />
                             <span className="text-lg font-bold text-orange-600 min-w-[60px] text-right">
@@ -712,7 +723,9 @@ export default function ROICalculator() {
                               max={20}
                               step={1}
                               value={field.value}
-                              onChange={(e) => field.onChange(Number(e.target.value))}
+                              onChange={(e) =>
+                                field.onChange(Number(e.target.value))
+                              }
                               className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-red-600"
                             />
                             <span className="text-lg font-bold text-red-600 min-w-[60px] text-right">
@@ -749,7 +762,9 @@ export default function ROICalculator() {
                               max={90}
                               step={1}
                               value={field.value}
-                              onChange={(e) => field.onChange(Number(e.target.value))}
+                              onChange={(e) =>
+                                field.onChange(Number(e.target.value))
+                              }
                               className="flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-emerald-600"
                             />
                             <span className="text-lg font-bold text-emerald-600 min-w-[60px] text-right">
